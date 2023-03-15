@@ -1,4 +1,4 @@
-<h1 align="center">Desafio 1</h1> <br>
+<h1 align="center">Desafio 2</h1> <br>
 
 
 ### Crie um Banco de Dados com o nome de DBSenai
@@ -43,3 +43,6 @@ VALUES
 <br>
 
 * Exibir toda a tabela cursos
+
+![foto](https://user-images.githubusercontent.com/119445003/225330444-38ec70f3-29ee-4e3b-ab62-a011a88a3b05.png)
+
