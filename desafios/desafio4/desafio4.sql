@@ -38,3 +38,34 @@ FROM
 GROUP BY DepartmentName
 ORDER BY 'Qtd. de Funcionários' ASC
 		
+
+--Total de funcionários do sexo masculino e feminino
+SELECT
+		Gender,
+		COUNT(*) AS 'Qtd. de Funcionários por sexo'
+FROM
+		DimEmployee
+GROUP BY Gender
+
+
+--Qual departamento tem mais funcionárias
+SELECT
+		DepartmentName,
+		COUNT(Gender) AS 'Qtd. de Funcionários por sexo'
+FROM
+		DimEmployee
+WHERE Gender = 'F' 
+GROUP BY DepartmentName, Gender 
+ORDER BY COUNT(Gender) DESC
+
+
+--Qual departamento tem mais funcionários
+SELECT
+		DepartmentName,
+		COUNT(Gender) AS 'Qtd. de Funcionários por sexo'
+FROM
+		DimEmployee
+WHERE Gender = 'M' 
+GROUP BY DepartmentName, Gender 
+ORDER BY COUNT(Gender) DESC
+		
