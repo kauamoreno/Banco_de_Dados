@@ -54,6 +54,16 @@ ORDER BY 'Qtd. de Funcionários' ASC
 <br><br>
 
 * Total de funcionários do sexo masculino e feminino
+~~~sql
+SELECT
+		Gender,
+		COUNT(Gender) AS 'Quantidade do genero'
+FROM
+		DimEmployee
+GROUP BY Gender
+~~~
+<br><br>
+
 * Qual departamento tem mais funcionárias
 * Qual departamento tem mais funcionários
 * Qual departamento tem menos funcionárias

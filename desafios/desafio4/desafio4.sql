@@ -69,3 +69,11 @@ WHERE Gender = 'M'
 GROUP BY DepartmentName, Gender 
 ORDER BY COUNT(Gender) DESC
 		
+		
+--Total de funcionários do sexo masculino e feminino
+SELECT
+		Gender,
+		COUNT(Gender) AS 'Quantidade do genero'
+FROM
+		DimEmployee
+GROUP BY Gender
