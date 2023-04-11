@@ -68,12 +68,25 @@ FROM
 WHERE Gender = 'M' 
 GROUP BY DepartmentName, Gender 
 ORDER BY COUNT(Gender) DESC
-		
-		
---Total de funcionários do sexo masculino e feminino
+
+
+--Qual departamento tem menos funcionárias
 SELECT
-		Gender,
-		COUNT(Gender) AS 'Quantidade do genero'
+		DepartmentName,
+		COUNT(Gender) AS 'Qtd. de Funcionárias'
+FROM 
+		DimEmployee
+WHERE Gender = 'F' 
+GROUP BY DepartmentName, Gender 
+ORDER BY COUNT(Gender) 
+
+
+--Qual departamento tem menos funcionários
+SELECT
+		DepartmentName,
+		COUNT(Gender) AS 'Qtd. de Funcionários'
 FROM
 		DimEmployee
-GROUP BY Gender
+WHERE Gender = 'M' 
+GROUP BY DepartmentName, Gender 
+ORDER BY COUNT(Gender) 

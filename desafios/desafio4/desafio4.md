@@ -65,6 +65,53 @@ GROUP BY Gender
 <br><br>
 
 * Qual departamento tem mais funcionárias
+~~~sql
+SELECT
+		DepartmentName,
+		COUNT(Gender) AS 'Qtd. de Funcionários por sexo'
+FROM
+		DimEmployee
+WHERE Gender = 'F' 
+GROUP BY DepartmentName, Gender 
+ORDER BY COUNT(Gender) DESC
+~~~
+<br><br>
+
 * Qual departamento tem mais funcionários
+~~~sql
+SELECT
+		DepartmentName,
+		COUNT(Gender) AS 'Qtd. de Funcionários por sexo'
+FROM
+		DimEmployee
+WHERE Gender = 'M' 
+GROUP BY DepartmentName, Gender 
+ORDER BY COUNT(Gender) DESC
+~~~
+<br><br>
+
 * Qual departamento tem menos funcionárias
+~~~sql
+SELECT
+		DepartmentName,
+		COUNT(Gender) AS 'Qtd. de Funcionárias'
+FROM 
+		DimEmployee
+WHERE Gender = 'F' 
+GROUP BY DepartmentName, Gender 
+ORDER BY COUNT(Gender) 
+~~~
+<br><br>
+
 * Qual departamento tem menos funcionários
+~~~sql
+SELECT
+		DepartmentName,
+		COUNT(Gender) AS 'Qtd. de Funcionários'
+FROM
+		DimEmployee
+WHERE Gender = 'M' 
+GROUP BY DepartmentName, Gender 
+ORDER BY COUNT(Gender) 
+~~~
+
