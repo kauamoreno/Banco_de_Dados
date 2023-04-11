@@ -1,4 +1,9 @@
 <h1 align="center">Desafio 4</h1> <br>
+A empresa XYZ está passando por uma reestruturação e precisa analisar as informações dos seus funcionários para tomar decisões estratégicas. Eles têm o banco de dados Contoso com as informações necessárias para realizar essa análise. <br><br>
+
+Você, como analista de dados da empresa XYZ, foi designado para realizar consultas no banco de dados Contoso para obter as informações necessárias. <br>
+Com essas informações, você poderá apresentar um relatório para a equipe de gestão da empresa, ajudando-os a tomar decisões mais informadas sobre a reestruturação.
+<br><br>
 
 ## Banco de Dados Contoso
 
@@ -114,4 +119,6 @@ WHERE Gender = 'M'
 GROUP BY DepartmentName, Gender 
 ORDER BY COUNT(Gender) 
 ~~~
+<br>
 
+> No Desafio 4, a gente colocou em prática nossas habilidades em SQL com consultas no banco de dados Contoso. Esse banco é bem famoso pra treinamentos e estudos de caso e tem muita informação sobre os funcionários de uma empresa, incluindo departamentos, gênero, cargo e outras coisas importantes.
