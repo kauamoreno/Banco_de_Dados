@@ -48,19 +48,36 @@ LEFT JOIN Unidade_Curricular
 -- 5. Quais os professores que não receberam nenhuma atribuição;
 
 
-
 -------------------------------------------------------------------------
 -- 6. Qual o total de curso para cada formação; CT, CAI e FIC;
+-- Não há compatibilidade entre as duas tabelas
 
 
 -------------------------------------------------------------------------
 -- 7. Qual o número de professor destinado a mesma turma;
+SELECT 
+	Turma.nome_turma,
+	COUNT(Professor.id_professor) AS 'Qtd. Professores'
+FROM
+	AtribuiçãoAula
+LEFT JOIN Turma
+	ON AtribuiçãoAula.id_turma = Turma.id_turma
+LEFT JOIN Professor
+	ON AtribuiçãoAula.id_professor = Professor.id_professor
+GROUP BY Turma.nome_turma 
 
 
 -- 8. Quais os professores que pegaram mais de uma turma e quantas foram;
 -- 9. O total de turma registrada;
 -- 10. Qual o total de turmas formadas;
 -- 11. Quantos alunos existem em cada turma;
+
+
+-------------------------------------------------------------------------
 -- 12. Quais alunos foram matriculados em mais de curso, e quais os cursos;
+-- Não é possivel verificar, pois não possui uma entidade intermediaria
+
+
+-------------------------------------------------------------------------
 -- 13. Qual a turma que tem mais alunos;
 -- 14. Qual a turma que tem menos alunos.
