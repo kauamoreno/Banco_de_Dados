@@ -68,3 +68,10 @@ uma tarefa. <br>
 12. Quais alunos foram matriculados em mais de curso, e quais os cursos;
 13. Qual a turma que tem mais alunos;
 14. Qual a turma que tem menos alunos.
+
+<br>
+
+### Resolução
+
+
+* [Resolução do desafio - lista](desafio5.sql)
