@@ -89,3 +89,7 @@ LEFT JOIN Venda
 SELECT * FROM TabelaVendas
 
 ```
+
+<br><br>
+
+### Arquivos SQL e EXEL utilizados 👉👉 [Diretório](https://github.com/kauamoreno/Banco_de_Dados/tree/main/formativa_06-06-23/materiais_da_resolucao)
